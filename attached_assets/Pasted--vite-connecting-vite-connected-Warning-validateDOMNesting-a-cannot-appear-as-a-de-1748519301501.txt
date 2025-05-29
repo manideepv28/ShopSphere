@@ -1,0 +1,47 @@
+[vite] connecting...
+[vite] connected.
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:337:18
+    at div
+    at div
+    at div
+    at a
+    at https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:337:18
+    at ProductCard (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/components/ProductCard.tsx:24:39)
+    at div
+    at section
+    at main
+    at div
+    at Home (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/pages/Home.tsx:25:51)
+    at Route (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:323:16)
+    at Switch (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:379:17)
+    at Router (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/App.tsx?v=6sh4GA9d2JEMigNnLkceF:34:31)
+    at Provider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-GFOGKHJ2.js?v=9964ddbb:22:15)
+    at TooltipProvider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=3305e909:54:5)
+    at QueryClientProvider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=45cb0a46:2805:3)
+    at App
+at a
+at https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:337:18
+at div
+at div
+at div
+at a
+at https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:337:18
+at ProductCard (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/components/ProductCard.tsx:24:39)
+at div
+at section
+at main
+at div
+at Home (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/pages/Home.tsx:25:51)
+at Route (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:323:16)
+at Switch (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=6d274c24:379:17)
+at Router (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/src/App.tsx?v=6sh4GA9d2JEMigNnLkceF:34:31)
+at Provider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-GFOGKHJ2.js?v=9964ddbb:22:15)
+at TooltipProvider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=3305e909:54:5)
+at QueryClientProvider (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=45cb0a46:2805:3)
+at App
+at t.value (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://5009a0bc-4a9c-4a0e-87d8-4a6da7b8f1ca-00-3izb3sozb9x3u.spock.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
