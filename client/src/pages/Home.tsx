@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import CategoryNav from "@/components/CategoryNav";
 import ProductCard from "@/components/ProductCard";
 import { Product } from "@/lib/types";
+import { getDemoProducts, getDemoFeaturedProducts } from "@/lib/demo-data";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<number | undefined>();
@@ -12,18 +13,33 @@ export default function Home() {
   const { data: products = [], isLoading } = useQuery<Product[]>({
     queryKey: ["/api/products", { category: selectedCategory, search: searchQuery }],
     queryFn: async () => {
-      const params = new URLSearchParams();
-      if (selectedCategory) params.append("category", selectedCategory.toString());
-      if (searchQuery) params.append("search", searchQuery);
-      
-      const response = await fetch(`/api/products?${params}`);
-      if (!response.ok) throw new Error("Failed to fetch products");
-      return response.json();
+      try {
+        const params = new URLSearchParams();
+        if (selectedCategory) params.append("category", selectedCategory.toString());
+        if (searchQuery) params.append("search", searchQuery);
+        
+        const response = await fetch(`/api/products?${params}`);
+        if (!response.ok) throw new Error("Failed to fetch products");
+        return response.json();
+      } catch (error) {
+        // Fallback to demo data when API is not available
+        return getDemoProducts(selectedCategory, searchQuery);
+      }
     },
   });
 
   const { data: featuredProducts = [] } = useQuery<Product[]>({
     queryKey: ["/api/products/featured"],
+    queryFn: async () => {
+      try {
+        const response = await fetch("/api/products/featured");
+        if (!response.ok) throw new Error("Failed to fetch featured products");
+        return response.json();
+      } catch (error) {
+        // Fallback to demo data when API is not available
+        return getDemoFeaturedProducts();
+      }
+    },
   });
 
   return (

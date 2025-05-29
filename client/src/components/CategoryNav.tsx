@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Category } from "@/lib/types";
+import { demoCategories } from "@/lib/demo-data";
 
 interface CategoryNavProps {
   selectedCategory?: number;
@@ -9,6 +10,16 @@ interface CategoryNavProps {
 export default function CategoryNav({ selectedCategory, onCategoryChange }: CategoryNavProps) {
   const { data: categories = [] } = useQuery<Category[]>({
     queryKey: ["/api/categories"],
+    queryFn: async () => {
+      try {
+        const response = await fetch("/api/categories");
+        if (!response.ok) throw new Error("Failed to fetch categories");
+        return response.json();
+      } catch (error) {
+        // Fallback to demo data when API is not available
+        return demoCategories;
+      }
+    },
   });
 
   return (
